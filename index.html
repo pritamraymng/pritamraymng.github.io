@@ -5,94 +5,145 @@
 <title>Pritam Ray | Home</title>
 
 <style>
+
+/* ===== COLOR PALETTE =====
+Primary: #2b2d42 (deep indigo)
+Accent:  #c9a227 (muted academic gold)
+Soft BG: #edf1f5
+Hover:   #3a3d5c
+================================ */
+
 body{
     margin:0;
-    font-family:Arial, sans-serif;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background:#edf1f5;
+    color:#2b2d42;
 }
 
-/* Layout */
+/* ===== LAYOUT ===== */
 .container{
     display:flex;
     height:100vh;
 }
 
-/* Sidebar */
+/* ===== SIDEBAR ===== */
 .sidebar{
-    width:220px;
-    background:#1f2933;
+    width:240px;
+    background:#2b2d42;
     color:white;
-    padding:20px;
+    padding:30px 20px;
+    box-shadow:3px 0 15px rgba(0,0,0,0.15);
 }
 
 .sidebar h2{
-    color:#00adb5;
+    margin-top:0;
+    font-weight:600;
+    letter-spacing:1px;
+    color:#c9a227;
 }
 
+/* Navigation links */
 .sidebar a{
     display:block;
-    color:white;
+    color:#e0e3eb;
     text-decoration:none;
-    margin:12px 0;
-    padding:8px;
+    margin:14px 0;
+    padding:10px 14px;
+    border-radius:6px;
+    transition:0.3s;
+    font-size:15px;
 }
 
 .sidebar a:hover{
-    background:#00adb5;
+    background:#3a3d5c;
+    color:white;
+    transform:translateX(5px);
 }
 
-/* Content */
+/* ===== CONTENT AREA ===== */
 .content{
     flex:1;
-    padding:40px;
-    background:#f4f6f8;
+    padding:50px;
+    overflow-y:auto;
 }
 
-/* Profile */
-.profile{
-    text-align:center;
-}
-
-.profile img{
-    width:20vw;
-    max-width:220px;
-    height:20vw;
-    max-height:220px;
-    object-fit:cover;
-    border-radius:50%;
-}
-
-
+/* ===== MAIN CARD ===== */
 .box{
     background:white;
-    padding:25px;
-    border-radius:8px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    padding:35px;
+    border-radius:14px;
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.08);
 }
-/* About layout */
+
+/* ===== ABOUT LAYOUT ===== */
 .about-container{
     display:flex;
     align-items:center;
-    gap:40px;
+    gap:50px;
     flex-wrap:wrap;
 }
 
+/* ===== PROFILE IMAGE ===== */
 .about-image img{
     width:220px;
     height:220px;
     object-fit:cover;
     border-radius:50%;
-    border:4px solid #00adb5;
+    border:5px solid #c9a227;
+    box-shadow:0 8px 18px rgba(0,0,0,0.15);
 }
 
+/* ===== TEXT SECTION ===== */
 .about-text{
     flex:1;
-    min-width:250px;
+    min-width:260px;
 }
 
 .about-text h2{
     margin-top:0;
+    font-size:30px;
+    color:#2b2d42;
+    border-bottom:3px solid #c9a227;
+    display:inline-block;
+    padding-bottom:6px;
 }
-    
+
+.about-text p{
+    line-height:1.7;
+    font-size:16px;
+    color:#444;
+}
+
+/* ===== SUBTLE PROFESSIONAL EFFECT ===== */
+.box:hover{
+    transform:translateY(-3px);
+    transition:0.3s;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width:900px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+        display:flex;
+        justify-content:space-around;
+        flex-wrap:wrap;
+    }
+
+    .sidebar a{
+        margin:6px;
+    }
+
+    .content{
+        padding:25px;
+    }
+}
+
 </style>
 </head>
 
@@ -100,7 +151,7 @@ body{
 
 <div class="container">
 
-<!-- Sidebar -->
+<!-- ===== SIDEBAR ===== -->
 <div class="sidebar">
 <h2>Pritam Ray</h2>
 
@@ -113,7 +164,7 @@ body{
 <a href="contact.html">Contact</a>
 </div>
 
-<!-- Content -->
+<!-- ===== CONTENT ===== -->
 <div class="content">
 
 <div class="box">
@@ -128,22 +179,22 @@ body{
 <h2>About</h2>
 
 <p>
-I am Pritam Ray, a researcher interested in algorithms,
-data streaming, sketching methods, and theoretical
-computer science. My work focuses on efficient
-algorithms for large-scale data and modern learning systems.
+I am <strong>Pritam Ray</strong>, a researcher interested in algorithms,
+data streaming, sketching methods, and theoretical computer science.
+My work focuses on designing efficient algorithms for large-scale
+data analysis and modern learning systems.
 </p>
 
 <p>
-This webpage contains information about my education,
-research interests, teaching experience, and achievements.
+This webpage presents my academic background, research interests,
+teaching experience, and achievements. My goal is to contribute to
+scalable algorithmic foundations bridging theory and real-world data.
 </p>
 
 </div>
 
 </div>
 </div>
-
 
 </div>
 </div>
