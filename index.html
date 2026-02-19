@@ -2,133 +2,105 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Pritam Ray | Personal Website</title>
+<title>Pritam Ray | Home</title>
 
 <style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f4f6f8;
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
 }
 
-/* NAVBAR */
-nav {
-  background: #222;
-  padding: 15px;
+/* Layout */
+.container{
+    display:flex;
+    height:100vh;
 }
 
-nav a {
-  color: white;
-  margin-right: 15px;
-  text-decoration: none;
-  font-weight: bold;
+/* Sidebar */
+.sidebar{
+    width:220px;
+    background:#1f2933;
+    color:white;
+    padding:20px;
 }
 
-/* HEADER */
-header {
-  background: #00adb5;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
+.sidebar h2{
+    color:#00adb5;
 }
 
-/* SECTIONS */
-.section {
-  width: 80%;
-  margin: 25px auto;
-  background: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    margin:12px 0;
+    padding:8px;
 }
 
-h2 {
-  color: #00adb5;
+.sidebar a:hover{
+    background:#00adb5;
 }
 
-/* FOOTER */
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 15px;
+/* Content */
+.content{
+    flex:1;
+    padding:40px;
+    background:#f4f6f8;
+}
+
+/* Profile */
+.profile{
+    text-align:center;
+}
+
+.profile img{
+    width:180px;
+    border-radius:50%;
+    margin-bottom:20px;
+}
+
+.box{
+    background:white;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 </style>
 </head>
 
 <body>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#education">Education</a>
-  <a href="#interest">Interest</a>
-  <a href="#teaching">Teaching</a>
-  <a href="#achievement">Achievement</a>
-  <a href="#contact">Contact</a>
-</nav>
+<div class="container">
 
-<header>
-  <h1>Pritam Ray</h1>
-  <p>Researcher | Student | Teacher</p>
-</header>
+<!-- Sidebar -->
+<div class="sidebar">
+<h2>Pritam Ray</h2>
 
-<div id="about" class="section">
+<a href="index.html">About</a>
+<a href="education.html">Education</a>
+<a href="interest.html">Interest</a>
+<a href="teaching.html">Teaching</a>
+<a href="achievement.html">Achievement</a>
+<a href="contact.html">Contact</a>
+</div>
+
+<!-- Content -->
+<div class="content">
+
+<div class="profile">
+<img src="profile.jpg" alt="Profile Photo">
+</div>
+
+<div class="box">
 <h2>About</h2>
-<p>I work in algorithms, data streaming, and theoretical computer science.</p>
-</div>
-
-<div id="education" class="section">
-<h2>Education</h2>
-<ul>
-<li>PhD — University Name</li>
-<li>Master's — Institute Name</li>
-<li>Bachelor's — College Name</li>
-</ul>
-</div>
-
-<div id="interest" class="section">
-<h2>Interest</h2>
-<ul>
-<li>Data Streaming Algorithms</li>
-<li>Machine Learning</li>
-<li>Sketching Methods</li>
-<li>Graph Algorithms</li>
-</ul>
-</div>
-
-<div id="teaching" class="section">
-<h2>Teaching</h2>
-<ul>
-<li>Teaching Assistant — Data Structures</li>
-<li>Teaching Assistant — Algorithms</li>
-</ul>
-</div>
-
-<div id="achievement" class="section">
-<h2>Achievement</h2>
-<ul>
-<li>Best Student Award</li>
-<li>Research Publication</li>
-<li>Scholarship Recipient</li>
-</ul>
-</div>
-
-<div id="contact" class="section">
-<h2>Contact</h2>
-<p>Email: yourname@email.com</p>
 <p>
-GitHub:
-<a href="https://github.com/pritamraymng" target="_blank">
-github.com/pritamraymng
-</a>
+I am interested in algorithms, data streaming,
+sketching methods, and theoretical computer science.
+Welcome to my academic webpage.
 </p>
 </div>
 
-<footer>
-<p>© 2026 Pritam Ray | Personal Website</p>
-</footer>
+</div>
+</div>
 
 </body>
 </html>
