@@ -70,11 +70,30 @@ body{
     border-top:1px solid rgba(0,0,0,0.3);
 }
 
+/* ===== Bottom Links (CV + LinkedIn in one line) ===== */
+.sidebar-bottom{
+    margin-top:auto;
+    padding-top:20px;
+    border-top:1px solid rgba(0,0,0,0.3);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
 .sidebar-bottom a{
+    text-decoration:none;
     color:#000000;
     font-weight:600;
-    margin-top:12px;
+    padding:6px 10px;
+    border-radius:6px;
+    transition:0.25s;
 }
+
+.sidebar-bottom a:hover{
+    background:rgba(0,0,0,0.15);
+}
+
 
 .sidebar-bottom a:hover{
     text-decoration:underline;
