@@ -27,13 +27,46 @@ body{
 }
 
 /* ===== SIDEBAR ===== */
+/* ===== SKY-BLUE PROFESSIONAL SIDEBAR ===== */
+
 .sidebar{
     width:240px;
-    background:#2b2d42;
+    background:linear-gradient(
+        180deg,
+        #4fa3d1,   /* soft sky blue */
+        #2c7fb8    /* deeper professional blue */
+    );
     color:white;
     padding:30px 20px;
-    box-shadow:3px 0 15px rgba(0,0,0,0.15);
+    box-shadow:3px 0 18px rgba(0,0,0,0.18);
 }
+
+.sidebar h2{
+    margin-top:0;
+    font-weight:600;
+    letter-spacing:1px;
+    color:#eaf6ff;   /* soft white-blue */
+}
+
+/* navigation links */
+.sidebar a{
+    display:block;
+    color:#f0f8ff;
+    text-decoration:none;
+    margin:14px 0;
+    padding:10px 14px;
+    border-radius:8px;
+    transition:all 0.25s ease;
+    font-size:15px;
+}
+
+/* hover effect */
+.sidebar a:hover{
+    background:rgba(255,255,255,0.2);
+    backdrop-filter:blur(4px);
+    transform:translateX(6px);
+}
+
 
 .sidebar h2{
     margin-top:0;
