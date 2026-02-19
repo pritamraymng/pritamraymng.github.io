@@ -6,16 +6,10 @@
 
 <style>
 
-/* ===== COLOR PALETTE =====
-Primary: #2b2d42 (deep indigo)
-Accent:  #c9a227 (muted academic gold)
-Soft BG: #edf1f5
-Hover:   #3a3d5c
-================================ */
-
+/* ===== GLOBAL ===== */
 body{
     margin:0;
-    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family:"Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background:#edf1f5;
     color:#2b2d42;
 }
@@ -27,30 +21,31 @@ body{
 }
 
 /* ===== SIDEBAR ===== */
-/* ===== SKY-BLUE PROFESSIONAL SIDEBAR ===== */
-
 .sidebar{
     width:240px;
     background:linear-gradient(
         180deg,
-        #4fa3d1,   /* soft sky blue */
-        #2c7fb8    /* deeper professional blue */
+        #4fa3d1,
+        #2c7fb8
     );
-    color:white;
     padding:30px 20px;
     box-shadow:3px 0 18px rgba(0,0,0,0.18);
+
+    display:flex;
+    flex-direction:column;
 }
 
+/* Name */
 .sidebar h2{
     margin-top:0;
     font-weight:700;
     letter-spacing:1px;
-    color:#000000;   /* black */
+    color:#000000;
+    padding-bottom:10px;
+    border-bottom:2px solid rgba(0,0,0,0.4);
 }
 
-
-
-/* navigation links */
+/* Navigation */
 .sidebar a{
     display:block;
     color:#f0f8ff;
@@ -62,50 +57,44 @@ body{
     font-size:15px;
 }
 
-/* hover effect */
 .sidebar a:hover{
-    background:rgba(255,255,255,0.2);
-    backdrop-filter:blur(4px);
+    background:rgba(255,255,255,0.25);
     transform:translateX(6px);
 }
 
-
-
-/* Navigation links */
-.sidebar a{
-    display:block;
-    color:#e0e3eb;
-    text-decoration:none;
-    margin:14px 0;
-    padding:10px 14px;
-    border-radius:6px;
-    transition:0.3s;
-    font-size:15px;
+/* ===== Bottom Links ===== */
+.sidebar-bottom{
+    margin-top:auto;
+    padding-top:20px;
+    border-top:1px solid rgba(0,0,0,0.3);
 }
 
-.sidebar a:hover{
-    background:#3a3d5c;
-    color:white;
-    transform:translateX(5px);
+.sidebar-bottom a{
+    color:#000000;
+    font-weight:600;
+    margin-top:12px;
 }
 
-/* ===== CONTENT AREA ===== */
+.sidebar-bottom a:hover{
+    text-decoration:underline;
+}
+
+/* ===== CONTENT ===== */
 .content{
     flex:1;
     padding:50px;
     overflow-y:auto;
 }
 
-/* ===== MAIN CARD ===== */
+/* Card */
 .box{
     background:white;
     padding:35px;
     border-radius:14px;
-    box-shadow:
-        0 10px 25px rgba(0,0,0,0.08);
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
-/* ===== ABOUT LAYOUT ===== */
+/* About Layout */
 .about-container{
     display:flex;
     align-items:center;
@@ -113,7 +102,7 @@ body{
     flex-wrap:wrap;
 }
 
-/* ===== PROFILE IMAGE ===== */
+/* Profile Image */
 .about-image img{
     width:220px;
     height:220px;
@@ -123,7 +112,7 @@ body{
     box-shadow:0 8px 18px rgba(0,0,0,0.15);
 }
 
-/* ===== TEXT SECTION ===== */
+/* Text */
 .about-text{
     flex:1;
     min-width:260px;
@@ -132,7 +121,6 @@ body{
 .about-text h2{
     margin-top:0;
     font-size:30px;
-    color:#2b2d42;
     border-bottom:3px solid #c9a227;
     display:inline-block;
     padding-bottom:6px;
@@ -144,7 +132,7 @@ body{
     color:#444;
 }
 
-/* ===== SUBTLE PROFESSIONAL EFFECT ===== */
+/* Hover lift */
 .box:hover{
     transform:translateY(-3px);
     transition:0.3s;
@@ -155,21 +143,23 @@ body{
 
     .container{
         flex-direction:column;
+        height:auto;
     }
 
     .sidebar{
         width:100%;
-        display:flex;
-        justify-content:space-around;
+        flex-direction:row;
         flex-wrap:wrap;
-    }
-
-    .sidebar a{
-        margin:6px;
+        justify-content:center;
     }
 
     .content{
         padding:25px;
+    }
+
+    .sidebar-bottom{
+        width:100%;
+        text-align:center;
     }
 }
 
@@ -182,6 +172,7 @@ body{
 
 <!-- ===== SIDEBAR ===== -->
 <div class="sidebar">
+
 <h2>Pritam Ray</h2>
 
 <a href="index.html">About</a>
@@ -191,6 +182,15 @@ body{
 <a href="teaching.html">Teaching</a>
 <a href="achievement.html">Achievement</a>
 <a href="contact.html">Contact</a>
+
+<!-- Bottom Links -->
+<div class="sidebar-bottom">
+    <a href="cv.pdf" target="_blank">CV</a>
+    <a href="https://www.linkedin.com/in/pritam-ray-8a9762334?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
+        LinkedIn
+    </a>
+</div>
+
 </div>
 
 <!-- ===== CONTENT ===== -->
@@ -205,11 +205,12 @@ body{
 </div>
 
 <div class="about-text">
+
 <h2>About</h2>
 
 <p>
-Hi,I am <strong>Pritam Ray</strong>, from Maynaguri, a city located at the foothills of the Himalayas in Jalpaiguri district, West Bengal, India. Currently, I am a PhD student in the Department of Computer Science & Engineering, IIT Hyderabad. Before joining IITH, I relished two beautiful years (2023-2025) at the great IIT Madras for my M.Tech. Studies in Industrial Mathematics & Scientific Computing at the Department of Mathematics.  
-
+Hi, I am <strong>Pritam Ray</strong>, a researcher interested in algorithms,
+data streaming, sketching methods, and theoretical computer science.
 </p>
 
 <p>
@@ -219,7 +220,6 @@ scalable algorithmic foundations bridging theory and real-world data.
 </p>
 
 </div>
-
 </div>
 </div>
 
