@@ -42,12 +42,10 @@ body{
     margin:14px 0;
     padding:10px 14px;
     border-radius:8px;
-    transition:0.25s;
 }
 
 .sidebar a:hover{
     background:rgba(0,0,0,0.15);
-    transform:translateX(6px);
 }
 
 .sidebar-bottom{
@@ -64,16 +62,12 @@ body{
     text-decoration:none;
 }
 
-.sidebar-bottom a:hover{
-    text-decoration:underline;
-}
-
 /* ===== CONTENT ===== */
 .content{
     flex:1;
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 .top-header{
     background:linear-gradient(
         135deg,
@@ -83,10 +77,8 @@ body{
     );
     height:160px;
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items:center;
-    text-align:center;
     border-bottom:1px solid rgba(0,0,0,0.08);
 }
 
@@ -96,7 +88,7 @@ body{
     color:#1b263b;
 }
 
-/* ===== MAIN AREA ===== */
+/* MAIN AREA */
 .main-area{
     padding:40px 60px;
 }
@@ -108,60 +100,54 @@ body{
     box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
-/* ===== EDUCATION IMAGE ===== */
+/* IMAGE */
 .education-image{
     text-align:center;
     margin-bottom:30px;
 }
 
 .education-image img{
-    width:100%;
     max-width:700px;
+    width:100%;
     border-radius:12px;
-    box-shadow:0 8px 18px rgba(0,0,0,0.15);
 }
 
-/* ===== HEADINGS ===== */
+/* TITLE */
 .section-title{
     font-size:30px;
-    margin-bottom:25px;
     border-bottom:3px solid #c9a227;
     display:inline-block;
     padding-bottom:6px;
+    margin-bottom:25px;
 }
 
-/* Degree blocks */
+/* DEGREE */
 .degree{
-    margin-bottom:28px;
+    margin-bottom:25px;
 }
 
 .degree h3{
-    margin-bottom:10px;
+    margin-bottom:8px;
     color:#1b263b;
 }
 
-/* Bullet details */
 .degree ul{
-    margin-top:8px;
     padding-left:22px;
     line-height:1.7;
     color:#444;
 }
 
-/* ===== RESPONSIVE ===== */
+/* RESPONSIVE */
 @media (max-width:900px){
-
 .container{
     flex-direction:column;
 }
-
 .sidebar{
     width:100%;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:center;
 }
-
 .main-area{
     padding:25px;
 }
@@ -174,7 +160,7 @@ body{
 
 <div class="container">
 
-<!-- ===== SIDEBAR ===== -->
+<!-- SIDEBAR -->
 <div class="sidebar">
 
 <a href="index.html">About</a>
@@ -187,14 +173,12 @@ body{
 
 <div class="sidebar-bottom">
     <a href="cv.pdf" target="_blank">CV</a>
-    <a href="https://linkedin.com/in/your-linkedin-id" target="_blank">
-        LinkedIn
-    </a>
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
 </div>
 
 </div>
 
-<!-- ===== CONTENT ===== -->
+<!-- CONTENT -->
 <div class="content">
 
 <div class="top-header">
@@ -209,39 +193,33 @@ body{
     <img src="education.jpg" alt="Education Image">
 </div>
 
-<!-- TITLE -->
 <h2 class="section-title">Educational Details</h2>
 
-<!-- BTECH -->
 <div class="degree">
-    <h3>B.Tech — Your University Name</h3>
-    <ul>
-        <li>Department: Computer Science and Engineering</li>
-        <li>Year: 2016 – 2020</li>
-        <li>CGPA: 8.7 / 10</li>
-        <li>Relevant Courses: Algorithms, Data Structures, Probability</li>
-    </ul>
+<h3>B.Tech — University Name</h3>
+<ul>
+<li>Department: Computer Science</li>
+<li>Year: 2016 – 2020</li>
+<li>CGPA: 8.7 / 10</li>
+<li>Relevant Courses: Algorithms, Data Structures</li>
+</ul>
 </div>
 
-<!-- MTECH -->
 <div class="degree">
-    <h3>M.Tech — Your Institute Name</h3>
-    <ul>
-        <li>Specialization: Data Science / Machine Learning</li>
-        <li>Year: 2020 – 2022</li>
-        <li>Thesis: Sketching Algorithms for Large-Scale Data</li>
-        <li>Advisor: Prof. XYZ</li>
-    </ul>
+<h3>M.Tech — Institute Name</h3>
+<ul>
+<li>Specialization: Data Science</li>
+<li>Year: 2020 – 2022</li>
+<li>Thesis: Sketching Algorithms</li>
+</ul>
 </div>
 
-<!-- PHD -->
 <div class="degree">
-    <h3>PhD — IIT Hyderabad</h3>
-    <ul>
-        <li>Research Area: Data Streams & Sketching Algorithms</li>
-        <li>Year: 2023 – Present</li>
-        <li>Focus: Sublinear algorithms for machine learning</li>
-    </ul>
+<h3>PhD — IIT Hyderabad</h3>
+<ul>
+<li>Research Area: Data Streams & Sketching</li>
+<li>Year: 2023 – Present</li>
+</ul>
 </div>
 
 </div>
