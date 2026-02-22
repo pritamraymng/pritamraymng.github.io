@@ -5,6 +5,35 @@
 <title>Pritam Ray | Education</title>
 
 <style>
+/* ===== Collapsible Others Section ===== */
+
+.others-section{
+    margin-top:25px;
+    background:#f7fafc;
+    padding:15px 20px;
+    border-radius:10px;
+    border-left:5px solid #4fa3d1;
+}
+
+/* clickable title */
+.others-section summary{
+    font-size:20px;
+    font-weight:600;
+    cursor:pointer;
+    color:#1b263b;
+    outline:none;
+}
+
+/* hover effect */
+.others-section summary:hover{
+    color:#2c7fb8;
+}
+
+/* bullet list spacing */
+.others-section ul{
+    margin-top:12px;
+    line-height:1.7;
+}    
 
 /* ===== GLOBAL ===== */
 body{
@@ -205,34 +234,36 @@ body{
     </figcaption>
 </figure>
 
-<h2 class="section-title">Educational Details</h2>
+<h2>Educational Details</h2>
 
-<div class="degree">
-<h3>B.Tech — University Name</h3>
+<!-- Example Degree -->
+<h3>PhD — Indian Institute of Technology Hyderabad</h3>
 <ul>
-<li>Department: Computer Science</li>
-<li>Year: 2016 – 2020</li>
-<li>CGPA: 8.7 / 10</li>
-<li>Relevant Courses: Algorithms, Data Structures</li>
+    <li>PhD in Computer Science</li>
+    <li>Research Area: Algorithms & Data Streaming</li>
+    <li>2023 – Present</li>
 </ul>
-</div>
 
-<div class="degree">
-<h3>M.Tech — Institute Name</h3>
+<h3>M.Tech — XYZ Institute</h3>
 <ul>
-<li>Specialization: Data Science</li>
-<li>Year: 2020 – 2022</li>
-<li>Thesis: Sketching Algorithms</li>
+    <li>M.Tech in Computer Science</li>
+    <li>Specialization: Data Science</li>
+    <li>CGPA: 8.9/10</li>
 </ul>
-</div>
 
-<div class="degree">
-<h3>PhD — IIT Hyderabad</h3>
-<ul>
-<li>Research Area: Data Streams & Sketching</li>
-<li>Year: 2023 – Present</li>
-</ul>
-</div>
+
+<!-- ✅ COLLAPSIBLE SECTION -->
+<details class="others-section">
+    <summary>Others</summary>
+
+    <ul>
+        <li>Machine Learning Certification — Coursera</li>
+        <li>Teaching Assistant Training Program</li>
+        <li>Workshop on Streaming Algorithms</li>
+        <li>Summer Research Internship</li>
+    </ul>
+
+</details>
 
 </div>
 </div>
