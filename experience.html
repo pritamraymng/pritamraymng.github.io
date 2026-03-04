@@ -2,36 +2,238 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Education</title>
-<link rel="stylesheet" href="style.css">
+<title>Pritam Ray | Experience</title>
+
+<style>
+
+/* ===== GLOBAL ===== */
+body{
+    margin:0;
+    font-family:"Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background:#edf1f5;
+    color:#2b2d42;
+}
+
+/* ===== LAYOUT ===== */
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar{
+    width:240px;
+    background:linear-gradient(
+        180deg,
+        #6fd3a8,
+        #4fa3d1,
+        #2c7fb8
+    );
+    padding:30px 20px;
+    box-shadow:3px 0 18px rgba(0,0,0,0.18);
+    display:flex;
+    flex-direction:column;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    margin:14px 0;
+    padding:10px 14px;
+    border-radius:8px;
+}
+
+.sidebar a:hover{
+    background:rgba(0,0,0,0.15);
+}
+
+.sidebar-bottom{
+    margin-top:auto;
+    padding-top:20px;
+    border-top:1px solid rgba(0,0,0,0.3);
+    display:flex;
+    justify-content:space-between;
+}
+
+.sidebar-bottom a{
+    color:black;
+    font-weight:600;
+    text-decoration:none;
+}
+
+/* ===== CONTENT ===== */
+.content{
+    flex:1;
+}
+
+/* HEADER */
+.top-header{
+    background:linear-gradient(
+        135deg,
+        #e0f7f1,
+        #e3f2fd,
+        #f1f8ff
+    );
+    height:160px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-bottom:1px solid rgba(0,0,0,0.08);
+}
+
+.top-header h1{
+    margin:0;
+    font-size:38px;
+    color:#1b263b;
+}
+
+/* MAIN AREA */
+.main-area{
+    padding:40px 60px;
+}
+
+.box{
+    background:white;
+    padding:40px;
+    border-radius:14px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* SECTION TITLE */
+.section-title{
+    font-size:30px;
+    border-bottom:3px solid #c9a227;
+    display:inline-block;
+    padding-bottom:6px;
+    margin-bottom:25px;
+}
+
+/* EXPERIENCE BLOCK */
+.experience-block{
+    margin-top:25px;
+    padding:20px 25px;
+    border-left:6px solid #c9a227;
+    background:#f9fbfc;
+    border-radius:10px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.05);
+}
+
+.experience-block h3{
+    margin-top:0;
+    margin-bottom:6px;
+    color:#1b263b;
+}
+
+.experience-meta{
+    font-size:14px;
+    color:#666;
+    margin-bottom:12px;
+}
+
+.experience-block ul{
+    padding-left:22px;
+    line-height:1.7;
+    color:#444;
+}
+
+/* RESPONSIVE */
+@media (max-width:900px){
+.container{
+    flex-direction:column;
+}
+.sidebar{
+    width:100%;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.main-area{
+    padding:25px;
+}
+}
+
+</style>
 </head>
 
 <body>
 
 <div class="container">
 
+<!-- SIDEBAR -->
 <div class="sidebar">
-<h2>Pritam Ray</h2>
+
 <a href="index.html">About</a>
 <a href="education.html">Education</a>
 <a href="interest.html">Interest</a>
 <a href="experience.html">Experience</a>
 <a href="teaching.html">Teaching</a>
+<a href="teaching.html">Publication</a>  
 <a href="achievement.html">Achievement</a>
 <a href="contact.html">Contact</a>
+
+<div class="sidebar-bottom">
+    <a href="cv.pdf" target="_blank">CV</a>
+    <a href="https://linkedin.com/in/your-linkedin-id" target="_blank">LinkedIn</a>
 </div>
 
+</div>
+
+<!-- CONTENT -->
 <div class="content">
+
+<div class="top-header">
+    <h1>Experience</h1>
+</div>
+
+<div class="main-area">
 <div class="box">
-<h2>Research Interest</h2>
-<ul>
-<li>PhD — University Name</li>
-<li>Master's — Institute Name</li>
-<li>Bachelor's — College Name</li>
-</ul>
+
+<h2 class="section-title">Professional Experience</h2>
+
+<!-- Research Experience -->
+<div class="experience-block">
+    <h3>Research Assistant</h3>
+    <div class="experience-meta">
+        Indian Institute of Technology Hyderabad | 2023 – Present
+    </div>
+    <ul>
+        <li>Working on sublinear algorithms and sketching techniques.</li>
+        <li>Developing theoretical guarantees for streaming models.</li>
+        <li>Collaborating on research publications in algorithmic theory.</li>
+    </ul>
+</div>
+
+<!-- Teaching Experience -->
+<div class="experience-block">
+    <h3>Teaching Assistant</h3>
+    <div class="experience-meta">
+        IIT Hyderabad | 2022 – 2024
+    </div>
+    <ul>
+        <li>Assisted in courses on Data Structures and Probability.</li>
+        <li>Conducted tutorials and doubt-solving sessions.</li>
+        <li>Evaluated assignments and exams.</li>
+    </ul>
+</div>
+
+<!-- Industry Experience -->
+<div class="experience-block">
+    <h3>Software Engineering Intern</h3>
+    <div class="experience-meta">
+        ABC Tech Company | Summer 2021
+    </div>
+    <ul>
+        <li>Worked on scalable backend systems.</li>
+        <li>Optimized data-processing pipelines.</li>
+        <li>Improved system efficiency by 15%.</li>
+    </ul>
+</div>
+
 </div>
 </div>
 
+</div>
 </div>
 
 </body>
